@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify the user can create an employee without creating login details of that employee.</description>
+   <name>TC01_PIM_CreateEmployeeWithoutCreatingLoginDetails</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0d82da92-8c82-42d2-8727-c24a39abf3b6</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>67336bb5-24ec-45b9-9dcd-2fa11e4c1813</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>38416b78-acdc-4f6f-a3a6-965a5a56a4a1</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>091f106d-efa0-4b9a-8d19-6b9092d2d17b</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>67336bb5-24ec-45b9-9dcd-2fa11e4c1813</id>
+      <masked>false</masked>
+      <name>employeeFirstName</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>38416b78-acdc-4f6f-a3a6-965a5a56a4a1</id>
+      <masked>false</masked>
+      <name>employeeMiddleName</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>091f106d-efa0-4b9a-8d19-6b9092d2d17b</id>
+      <masked>false</masked>
+      <name>employeeLastName</name>
+   </variable>
+</TestCaseEntity>

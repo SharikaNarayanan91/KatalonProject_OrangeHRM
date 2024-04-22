@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify the user can search an employee With employeId.</description>
+   <name>TC02_PIM_SearchEmployeeWithEmployeeId</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>57e86aa5-a676-4ac8-8cf0-8ce2850b33db</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>2841a70e-0f6a-469c-827c-6b26cce82a20</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>7efeca86-0a10-45c9-888f-8b5d6c06f652</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>3e0d8065-a509-482b-8b16-4c40dd1fc41f</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>2841a70e-0f6a-469c-827c-6b26cce82a20</id>
+      <masked>false</masked>
+      <name>employeeFirstName</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>7efeca86-0a10-45c9-888f-8b5d6c06f652</id>
+      <masked>false</masked>
+      <name>employeeMiddleName</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>3e0d8065-a509-482b-8b16-4c40dd1fc41f</id>
+      <masked>false</masked>
+      <name>employeeLastName</name>
+   </variable>
+</TestCaseEntity>
