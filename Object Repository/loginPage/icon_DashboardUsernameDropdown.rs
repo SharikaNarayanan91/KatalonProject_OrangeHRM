@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>i_Dashboard_oxd-icon bi-caret-down-fill oxd_d2fd49</name>
+   <name>icon_DashboardUsernameDropdown</name>
    <tag></tag>
    <elementGuidId>42fe34ce-692e-4737-913e-30376e332d14</elementGuidId>
    <selectorCollection>

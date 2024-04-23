@@ -17,15 +17,6 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-'Open the browser'
-WebUI.openBrowser('')
-
-'Maximize the window.'
-WebUI.maximizeWindow()
-
-'Navigate to the given URL.'
-WebUI.navigateToUrl(GlobalVariable.URL)
-
 'Enter the username.'
 WebUI.setText(findTestObject('Object Repository/loginPage/input_Username_username'), GlobalVariable.userName)
 
@@ -37,7 +28,4 @@ WebUI.click(findTestObject('Object Repository/loginPage/button_Login'))
 
 'Verify the user is logged in and the \'Dashboard\' page is displayed.'
 WebUI.verifyElementText(findTestObject('Object Repository/loginPage/ele_Dashboard'), 'Dashboard')
-
-'Close the browser.'
-WebUI.closeBrowser()
 

@@ -7,7 +7,7 @@
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
    <dataFileGUID>4715b6f1-7db2-411d-8cb6-61d6b38e19b9</dataFileGUID>
-   <dataSourceUrl>C:\Users\Sharika\Katalon Studio\OrangeHRM\Input Files\TestData.xlsx</dataSourceUrl>
+   <dataSourceUrl>C:\Users\Sharika\git\KatalonProject_OrangeHRM\Input Files\TestData.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
    <isInternalPath>false</isInternalPath>
    <query></query>

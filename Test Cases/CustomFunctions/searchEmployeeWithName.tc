@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Search employee on PIM page.</description>
+   <name>searchEmployeeWithName</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>6371b6c0-6af7-4d7a-9baf-348859b334c9</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>9f802716-24ed-4d38-958d-e285fb0f3f46</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>9f802716-24ed-4d38-958d-e285fb0f3f46</id>
+      <masked>false</masked>
+      <name>employeeFullName</name>
+   </variable>
+</TestCaseEntity>

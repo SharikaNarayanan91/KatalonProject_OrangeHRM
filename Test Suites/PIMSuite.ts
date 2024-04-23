@@ -14,7 +14,7 @@
    <testCaseLink>
       <guid>d2fa9494-26fd-4ab8-a6b0-df1330031753</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/PIM/TC01_PIM_CreateEmployeeWithoutCreatingLoginDetails</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -48,7 +48,7 @@
    <testCaseLink>
       <guid>bdfbeedf-fa3c-4e83-bd52-c5f4e61c0a99</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/PIM/TC02_PIM_SearchEmployeeWithEmployeeId</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -117,6 +117,40 @@
          <type>DATA_COLUMN</type>
          <value>Username</value>
          <variableId>2ea2427d-d8ec-43d0-b356-50b798576a57</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>e56ec201-ac15-4280-9030-adcf3a2ffdb1</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/PIM/TC04_PIM_DeleteEmployee</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>525b4f94-9d5a-43ff-acfc-1cb865d3a3b7</id>
+         <iterationEntity>
+            <iterationType>RANGE</iterationType>
+            <value>4-4</value>
+         </iterationEntity>
+         <testDataId>Data Files/PIMData</testDataId>
+      </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId>525b4f94-9d5a-43ff-acfc-1cb865d3a3b7</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>EmployeeFirstName</value>
+         <variableId>450de138-3808-4b79-9f65-e995116345c2</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>525b4f94-9d5a-43ff-acfc-1cb865d3a3b7</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>EmployeeMiddleName</value>
+         <variableId>df3f8972-6be3-4a96-bdd9-6e7cd9793c99</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>525b4f94-9d5a-43ff-acfc-1cb865d3a3b7</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>EmployeeLastName</value>
+         <variableId>99e48cba-7b80-4be6-b86d-bebde6743351</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

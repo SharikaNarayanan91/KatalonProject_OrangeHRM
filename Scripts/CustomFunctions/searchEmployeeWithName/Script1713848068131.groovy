@@ -17,12 +17,12 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-'Click on the Dashboard name chevron button.'
-WebUI.click(findTestObject('Object Repository/loginPage/i_Dashboard_oxd-icon bi-caret-down-fill oxd_d2fd49'))
+'Click on the \'PIM\' tab.'
+WebUI.click(findTestObject('pimPage/tab_PIM'), FailureHandling.STOP_ON_FAILURE)
 
-'Click on the \'Logout\' icon.'
-WebUI.click(findTestObject('Object Repository/loginPage/a_Logout'))
+'Enter the employee name.'
+WebUI.setText(findTestObject('pimPage/input_employeeFullName'), employeeFullName)
 
-'Verify the user is on the \'Login\' page.'
-WebUI.verifyElementText(findTestObject('Object Repository/loginPage/h5_Login'), 'Login')
+'Click on the search button.'
+WebUI.click(findTestObject('pimPage/button_Search'))
 

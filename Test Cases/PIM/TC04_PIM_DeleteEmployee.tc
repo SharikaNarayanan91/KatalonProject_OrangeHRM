@@ -1,60 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>Verify the user can create an employee with login details.</description>
-   <name>TC03_PIM_CreateEmployeeWithLoginDetails</name>
+   <description>Verify the user can delete an employee.</description>
+   <name>TC04_PIM_DeleteEmployee</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>02756b63-5aa8-4349-85a5-4eb0bd2a155b</testCaseGuid>
+   <testCaseGuid>7c1a98c0-a33b-4ef6-8bf3-934adf59cc6f</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>e801d946-5ec4-4d66-ac32-cd7cc630d0a4</variableId>
+      <variableId>450de138-3808-4b79-9f65-e995116345c2</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>b6cf2239-7fa1-408e-b05a-801a3557b04e</variableId>
+      <variableId>df3f8972-6be3-4a96-bdd9-6e7cd9793c99</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>5dde7616-c4df-4afd-a1e3-458db895ae69</variableId>
-   </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
-      <variableId>2ea2427d-d8ec-43d0-b356-50b798576a57</variableId>
+      <variableId>99e48cba-7b80-4be6-b86d-bebde6743351</variableId>
    </variableLinks>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>e801d946-5ec4-4d66-ac32-cd7cc630d0a4</id>
+      <id>450de138-3808-4b79-9f65-e995116345c2</id>
       <masked>false</masked>
       <name>employeeFirstName</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>b6cf2239-7fa1-408e-b05a-801a3557b04e</id>
+      <id>df3f8972-6be3-4a96-bdd9-6e7cd9793c99</id>
       <masked>false</masked>
       <name>employeeMiddleName</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>5dde7616-c4df-4afd-a1e3-458db895ae69</id>
+      <id>99e48cba-7b80-4be6-b86d-bebde6743351</id>
       <masked>false</masked>
       <name>employeeLastName</name>
-   </variable>
-   <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
-      <id>2ea2427d-d8ec-43d0-b356-50b798576a57</id>
-      <masked>false</masked>
-      <name>newUsername</name>
    </variable>
 </TestCaseEntity>

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>h5_Login</name>
+   <name>ele_userDropdownName</name>
    <tag></tag>
-   <elementGuidId>79770442-60b8-4911-b79d-7646de526fac</elementGuidId>
+   <elementGuidId>81397e6d-db6f-4d54-95aa-faa3a54ff91b</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>h5.oxd-text.oxd-text--h5.orangehrm-login-title</value>
+         <value>p.oxd-userdropdown-name</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='app']/div/div/div/div/div[2]/h5</value>
+         <value>//div[@id='app']/div/div/header/div/div[2]/ul/li/span/p</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,79 +22,79 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>h5</value>
-      <webElementGuid>fc01b855-e452-488c-8e39-b76f6398be0b</webElementGuid>
+      <value>p</value>
+      <webElementGuid>69b74cc4-e601-4615-a982-80f2af4e5436</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>oxd-text oxd-text--h5 orangehrm-login-title</value>
-      <webElementGuid>88feb360-c1c8-480e-95fc-0c41c6e01c6a</webElementGuid>
+      <value>oxd-userdropdown-name</value>
+      <webElementGuid>73ca32e3-9c78-43f6-9dcf-fa0aac65787d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Login</value>
-      <webElementGuid>cc196f4c-17fc-4d2b-987a-67f5107d23c1</webElementGuid>
+      <value>manda user</value>
+      <webElementGuid>be68607e-f648-47f4-82e8-14ae9273d234</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;app&quot;)/div[@class=&quot;orangehrm-login-layout&quot;]/div[@class=&quot;orangehrm-login-layout-blob&quot;]/div[@class=&quot;orangehrm-login-container&quot;]/div[@class=&quot;orangehrm-login-slot-wrapper&quot;]/div[@class=&quot;orangehrm-login-slot&quot;]/h5[@class=&quot;oxd-text oxd-text--h5 orangehrm-login-title&quot;]</value>
-      <webElementGuid>2ee29f61-a875-4095-a752-377cc283f60c</webElementGuid>
+      <value>id(&quot;app&quot;)/div[@class=&quot;oxd-layout&quot;]/div[@class=&quot;oxd-layout-navigation&quot;]/header[@class=&quot;oxd-topbar&quot;]/div[@class=&quot;oxd-topbar-header&quot;]/div[@class=&quot;oxd-topbar-header-userarea&quot;]/ul[1]/li[@class=&quot;--active oxd-userdropdown&quot;]/span[@class=&quot;oxd-userdropdown-tab&quot;]/p[@class=&quot;oxd-userdropdown-name&quot;]</value>
+      <webElementGuid>c60693b4-d183-4953-b9df-fe1d5a013aff</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='app']/div/div/div/div/div[2]/h5</value>
-      <webElementGuid>f5369722-f3b0-45c8-aa64-32b5f88bacfc</webElementGuid>
+      <value>//div[@id='app']/div/div/header/div/div[2]/ul/li/span/p</value>
+      <webElementGuid>aa118cba-eeea-4e3c-b5d9-69ba5e9080a4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Username'])[1]/preceding::h5[1]</value>
-      <webElementGuid>a630117d-01d8-4417-b30c-c3e9195676aa</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Support'])[1]/preceding::p[1]</value>
+      <webElementGuid>2833c6fe-e811-42c1-98f3-694d5b500876</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Password'])[1]/preceding::h5[1]</value>
-      <webElementGuid>0ee97b39-ac3e-4b6a-ac52-7a3054600d3c</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Change Password'])[1]/preceding::p[1]</value>
+      <webElementGuid>6ea1daf1-b7e2-4fd6-9a9d-b5c3028f8eb0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Login']/parent::*</value>
-      <webElementGuid>b1eb2a60-20bd-4146-8f50-e4a42d1f82dd</webElementGuid>
+      <value>//*/text()[normalize-space(.)='manda user']/parent::*</value>
+      <webElementGuid>a04ce564-2ac2-4797-b910-ada358fcccb9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//h5</value>
-      <webElementGuid>999bc713-0718-4c20-901e-0d5c2a402be4</webElementGuid>
+      <value>//p</value>
+      <webElementGuid>51a46abd-3ebe-4efb-b723-961df40659f6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//h5[(text() = 'Login' or . = 'Login')]</value>
-      <webElementGuid>81cefef0-c55b-4d0d-a871-7c18f97c5376</webElementGuid>
+      <value>//p[(text() = 'manda user' or . = 'manda user')]</value>
+      <webElementGuid>0b3f0705-a424-42c5-9ba3-9db2bd77aae7</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

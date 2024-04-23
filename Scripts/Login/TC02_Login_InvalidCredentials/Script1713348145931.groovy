@@ -20,6 +20,9 @@ import org.openqa.selenium.Keys as Keys
 'Open the browser'
 WebUI.openBrowser('')
 
+'Maximize the window.'
+WebUI.maximizeWindow()
+
 'Navigate to the given URL.'
 WebUI.navigateToUrl(GlobalVariable.URL)
 

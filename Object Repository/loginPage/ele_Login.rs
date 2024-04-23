@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_Accepts jpg, .png, .gif up to 1MB. Reco_82c944</name>
+   <name>ele_Login</name>
    <tag></tag>
-   <elementGuidId>20ed3341-e888-4d42-bea2-cc1f4e626895</elementGuidId>
+   <elementGuidId>79770442-60b8-4911-b79d-7646de526fac</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>div.orangehrm-employee-image</value>
+         <value>h5.oxd-text.oxd-text--h5.orangehrm-login-title</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='app']/div/div[2]/div[2]/div/div/form/div/div</value>
+         <value>//div[@id='app']/div/div/div/div/div[2]/h5</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,79 +22,79 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>div</value>
-      <webElementGuid>9ff01dcf-fa08-4a92-b517-844a95f99988</webElementGuid>
+      <value>h5</value>
+      <webElementGuid>fc01b855-e452-488c-8e39-b76f6398be0b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>orangehrm-employee-image</value>
-      <webElementGuid>e897b5c4-d09f-4296-93fc-82474f5e5ce8</webElementGuid>
+      <value>oxd-text oxd-text--h5 orangehrm-login-title</value>
+      <webElementGuid>88feb360-c1c8-480e-95fc-0c41c6e01c6a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Accepts jpg, .png, .gif up to 1MB. Recommended dimensions: 200px X 200px</value>
-      <webElementGuid>d17f86c7-41a3-46cd-9fb6-f057261ebd66</webElementGuid>
+      <value>Login</value>
+      <webElementGuid>cc196f4c-17fc-4d2b-987a-67f5107d23c1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;app&quot;)/div[@class=&quot;oxd-layout&quot;]/div[@class=&quot;oxd-layout-container&quot;]/div[@class=&quot;oxd-layout-context&quot;]/div[@class=&quot;orangehrm-background-container&quot;]/div[@class=&quot;orangehrm-card-container&quot;]/form[@class=&quot;oxd-form&quot;]/div[@class=&quot;orangehrm-employee-container&quot;]/div[@class=&quot;orangehrm-employee-image&quot;]</value>
-      <webElementGuid>3a5d2970-993a-40be-ad66-f3363677fcfa</webElementGuid>
+      <value>id(&quot;app&quot;)/div[@class=&quot;orangehrm-login-layout&quot;]/div[@class=&quot;orangehrm-login-layout-blob&quot;]/div[@class=&quot;orangehrm-login-container&quot;]/div[@class=&quot;orangehrm-login-slot-wrapper&quot;]/div[@class=&quot;orangehrm-login-slot&quot;]/h5[@class=&quot;oxd-text oxd-text--h5 orangehrm-login-title&quot;]</value>
+      <webElementGuid>2ee29f61-a875-4095-a752-377cc283f60c</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='app']/div/div[2]/div[2]/div/div/form/div/div</value>
-      <webElementGuid>5c3763aa-896b-46e8-838e-c1cd9fc7539f</webElementGuid>
+      <value>//div[@id='app']/div/div/div/div/div[2]/h5</value>
+      <webElementGuid>f5369722-f3b0-45c8-aa64-32b5f88bacfc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Configuration'])[1]/following::div[8]</value>
-      <webElementGuid>757a5bf5-ca5a-48be-b479-3ae8545eb424</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Username'])[1]/preceding::h5[1]</value>
+      <webElementGuid>a630117d-01d8-4417-b30c-c3e9195676aa</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Employee Full Name'])[1]/preceding::div[6]</value>
-      <webElementGuid>7900623b-5ad9-4547-8839-5c2bc5c7e119</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Password'])[1]/preceding::h5[1]</value>
+      <webElementGuid>0ee97b39-ac3e-4b6a-ac52-7a3054600d3c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Employee Id'])[1]/preceding::div[20]</value>
-      <webElementGuid>4ae8631d-4ec7-44a7-9638-2b473e6a6216</webElementGuid>
+      <value>//*/text()[normalize-space(.)='Login']/parent::*</value>
+      <webElementGuid>b1eb2a60-20bd-4146-8f50-e4a42d1f82dd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//form/div/div</value>
-      <webElementGuid>7fc515a5-7833-4a94-aa45-50b377199ab9</webElementGuid>
+      <value>//h5</value>
+      <webElementGuid>999bc713-0718-4c20-901e-0d5c2a402be4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//div[(text() = 'Accepts jpg, .png, .gif up to 1MB. Recommended dimensions: 200px X 200px' or . = 'Accepts jpg, .png, .gif up to 1MB. Recommended dimensions: 200px X 200px')]</value>
-      <webElementGuid>a70b591a-e458-459d-931c-bf7b246f80ca</webElementGuid>
+      <value>//h5[(text() = 'Login' or . = 'Login')]</value>
+      <webElementGuid>81cefef0-c55b-4d0d-a871-7c18f97c5376</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

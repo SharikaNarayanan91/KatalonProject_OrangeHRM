@@ -17,24 +17,12 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-'Open the browser'
-WebUI.openBrowser('')
+'Click on the Dashboard name chevron button.'
+WebUI.click(findTestObject('Object Repository/loginPage/icon_DashboardUsernameDropdown'))
 
-'Maximize the window.'
-WebUI.maximizeWindow()
+'Click on the \'Logout\' icon.'
+WebUI.click(findTestObject('Object Repository/loginPage/a_Logout'))
 
-'Navigate to the given URL.'
-WebUI.navigateToUrl(GlobalVariable.URL)
-
-'Enter the username.'
-WebUI.setText(findTestObject('Object Repository/loginPage/input_Username_username'), GlobalVariable.userName)
-
-'Enter the password.'
-WebUI.setEncryptedText(findTestObject('Object Repository/loginPage/input_Password_password'), GlobalVariable.password)
-
-'Click on the \'Login\' button.'
-WebUI.click(findTestObject('Object Repository/loginPage/button_Login'))
-
-'Verify the user is logged in and the \'Dashboard\' page is displayed.'
-WebUI.verifyElementText(findTestObject('Object Repository/loginPage/h6_Dashboard'), 'Dashboard')
+'Verify the user is on the \'Login\' page.'
+WebUI.verifyElementText(findTestObject('Object Repository/loginPage/ele_Login'), 'Login')
 

@@ -17,26 +17,42 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-'Open the browser'
+'Open the browser.'
 WebUI.openBrowser('')
 
 'Maximize the window.'
 WebUI.maximizeWindow()
 
-'Navigate to the given URL.'
+'Navigate to URL.'
 WebUI.navigateToUrl(GlobalVariable.URL)
 
-'Enter the username.'
-WebUI.setText(findTestObject('Object Repository/loginPage/input_Username_username'), GlobalVariable.userName)
+'Login to the user.'
+WebUI.callTestCase(findTestCase('CustomFunctions/login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-'Enter the password.'
-WebUI.setEncryptedText(findTestObject('Object Repository/loginPage/input_Password_password'), GlobalVariable.password)
+'Create an employee.'
+WebUI.callTestCase(findTestCase('CustomFunctions/createEmployee'), [('employeeFirstName') : employeeFirstName, ('employeeMiddleName') : employeeMiddleName
+        , ('employeeLastName') : employeeLastName], FailureHandling.STOP_ON_FAILURE)
 
-'Click on the \'Login\' button.'
-WebUI.click(findTestObject('Object Repository/loginPage/button_Login'))
+'Get the employeeFullName.'
+employeeFullName = ((((employeeFirstName + ' ') + employeeMiddleName) + ' ') + employeeLastName)
 
-'Verify the user is logged in and the \'Dashboard\' page is displayed.'
-WebUI.verifyElementText(findTestObject('Object Repository/loginPage/ele_Dashboard'), 'Dashboard')
+'Search the employee.'
+WebUI.callTestCase(findTestCase('CustomFunctions/searchEmployeeWithName'), [('employeeFullName') : employeeFullName], FailureHandling.STOP_ON_FAILURE)
+
+'Click on the delete icon.'
+WebUI.click(findTestObject('pimPage/icon_delete'))
+
+'Click on the \'Yes,Delete\' button on delete popup.'
+WebUI.click(findTestObject('pimPage/button_Yes, Delete'))
+
+'Search the deleted employee.'
+WebUI.callTestCase(findTestCase('CustomFunctions/searchEmployeeWithName'), [('employeeFullName') : employeeFullName], FailureHandling.STOP_ON_FAILURE)
+
+'Verify that No records are found.'
+WebUI.verifyElementText(findTestObject('Object Repository/pimPage/span_No Records Found'), 'No Records Found')
+
+'Logout from the user.'
+WebUI.callTestCase(findTestCase('CustomFunctions/logout'), [:], FailureHandling.STOP_ON_FAILURE)
 
 'Close the browser.'
 WebUI.closeBrowser()

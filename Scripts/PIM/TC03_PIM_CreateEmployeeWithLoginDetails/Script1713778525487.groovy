@@ -17,8 +17,17 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+'Open the browser.'
+WebUI.openBrowser('')
+
+'Maximize the window.'
+WebUI.maximizeWindow()
+
+'Navigate to URL.'
+WebUI.navigateToUrl(GlobalVariable.URL)
+
 'Login to the user.'
-WebUI.callTestCase(findTestCase('CustomFunctions/Login'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('CustomFunctions/login'), [:], FailureHandling.STOP_ON_FAILURE)
 
 'Click on the \'PIM\' tab.'
 WebUI.click(findTestObject('Object Repository/pimPage/tab_PIM'))
@@ -42,28 +51,28 @@ WebUI.setText(findTestObject('Object Repository/pimPage/input_Employee Full Name
 WebUI.click(findTestObject('pimPage/span_Employee Id_oxd-switch-input oxd-switc_efe210'))
 
 'Enter the \'Username\'.'
-WebUI.setText(findTestObject('pimPage/input_Username_oxd-input oxd-input--focus'), username)
+WebUI.setText(findTestObject('pimPage/input_Username_oxd-input oxd-input--focus'), newUsername)
 
 'Enter the \'Password\'.'
-WebUI.setEncryptedText(findTestObject('Object Repository/pimPage/input_Password_oxd-input oxd-input--focus'), '0q7y/FwBuKiBRVXfifFeUA==')
+WebUI.setEncryptedText(findTestObject('Object Repository/pimPage/input_Password_oxd-input oxd-input--focus'), 'KdeBFcnstOMsKd2sbdr6jw==')
 
 'Enter the \'Confirm Password\'.'
-WebUI.setEncryptedText(findTestObject('pimPage/input_Confirm Password_oxd-input oxd-input--focus'), '0q7y/FwBuKiBRVXfifFeUA==')
+WebUI.setEncryptedText(findTestObject('pimPage/input_Confirm Password_oxd-input oxd-input--focus'), 'KdeBFcnstOMsKd2sbdr6jw==')
 
 'Click on the \'Save\' button.'
 WebUI.click(findTestObject('pimPage/button_Save'))
 
-'Click on the \'PIM\' tab.'
-WebUI.click(findTestObject('pimPage/tab_PIM'))
-
 'Get the employeeFullName.'
 employeeFullName = ((((employeeFirstName + ' ') + employeeMiddleName) + ' ') + employeeLastName)
 
-'Enter the \'Employee Name\'.'
-WebUI.setText(findTestObject('Object Repository/pimPage/input_employeeFullName'), employeeFullName)
+'Get the user profile name.'
+userDropdownName = ((employeeFirstName + ' ') + employeeLastName)
 
-'Click on the \'Search\' button.'
-WebUI.click(findTestObject('Object Repository/pimPage/button_Search'))
+'Wait for the Employee name to display.'
+WebUI.waitForElementVisible(findTestObject('pimPage/ele_EmployeeName'), 10)
+
+'Search the employee.'
+WebUI.callTestCase(findTestCase('CustomFunctions/searchEmployeeWithName'), [('employeeFullName') : employeeFullName], FailureHandling.STOP_ON_FAILURE)
 
 'Verify the \'First & Middle name\' of the Employee.'
 WebUI.verifyElementText(findTestObject('Object Repository/pimPage/ele_employeeFirstAndMiddleName'), (employeeFirstName + 
@@ -72,11 +81,26 @@ WebUI.verifyElementText(findTestObject('Object Repository/pimPage/ele_employeeFi
 'Verify the \'Last name\' of the Employee.'
 WebUI.verifyElementText(findTestObject('Object Repository/pimPage/ele_employeeLastName'), employeeLastName)
 
-'Click on the \'Delete\' icon.'
-WebUI.click(findTestObject('pimPage/icon_delete'))
+'Logout of the user.'
+WebUI.callTestCase(findTestCase('CustomFunctions/logout'), [:], FailureHandling.STOP_ON_FAILURE)
+
+'Enter the new employee username.'
+WebUI.setText(findTestObject('Object Repository/loginPage/input_Username_username'), newUsername)
+
+'Enter the new employee password.'
+WebUI.setEncryptedText(findTestObject('Object Repository/loginPage/input_Password_password'), 'KdeBFcnstOMsKd2sbdr6jw==')
+
+'Click on the \'Login\' button.'
+WebUI.click(findTestObject('Object Repository/loginPage/button_Login'))
+
+'Set the user profile name.'
+userDropdownName = ((employeeFirstName + ' ') + employeeLastName)
+
+'Verify the user is loged into new employee account.'
+WebUI.verifyElementText(findTestObject('pimPage/ele_userDropdownName'), userDropdownName)
 
 'Logout from the given user.'
-WebUI.callTestCase(findTestCase('CustomFunctions/Logout'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('CustomFunctions/logout'), [:], FailureHandling.STOP_ON_FAILURE)
 
 'Close the browser.'
 WebUI.closeBrowser()

@@ -17,27 +17,24 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-'Open the browser'
-WebUI.openBrowser('')
+'Click on the \'PIM\' tab.'
+WebUI.click(findTestObject('pimPage/tab_PIM'))
 
-'Maximize the window.'
-WebUI.maximizeWindow()
+'Verify the \'PIM\' page is displayed.'
+WebUI.verifyElementText(findTestObject('pimPage/ele_PIM'), 'PIM')
 
-'Navigate to the given URL.'
-WebUI.navigateToUrl(GlobalVariable.URL)
+'Click on the \'Add\' button.'
+WebUI.click(findTestObject('pimPage/button_Add'))
 
-'Enter the username.'
-WebUI.setText(findTestObject('Object Repository/loginPage/input_Username_username'), GlobalVariable.userName)
+'Enter the \'First name\' of the employee.'
+WebUI.setText(findTestObject('pimPage/input_Employee Full Name_firstName'), employeeFirstName)
 
-'Enter the password.'
-WebUI.setEncryptedText(findTestObject('Object Repository/loginPage/input_Password_password'), GlobalVariable.password)
+'Enter the \'Middle name\' of the employee.'
+WebUI.setText(findTestObject('pimPage/input_Employee Full Name_middleName'), employeeMiddleName)
 
-'Click on the \'Login\' button.'
-WebUI.click(findTestObject('Object Repository/loginPage/button_Login'))
+'Enter the \'Last name\' of the employee.'
+WebUI.setText(findTestObject('pimPage/input_Employee Full Name_lastName'), employeeLastName)
 
-'Verify the user is logged in and the \'Dashboard\' page is displayed.'
-WebUI.verifyElementText(findTestObject('Object Repository/loginPage/ele_Dashboard'), 'Dashboard')
-
-'Close the browser.'
-WebUI.closeBrowser()
+'Click on the \'Save\' button.'
+WebUI.click(findTestObject('pimPage/button_Save'))
 

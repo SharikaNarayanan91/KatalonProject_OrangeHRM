@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>h6_Dashboard</name>
+   <name>ele_Dashboard</name>
    <tag></tag>
    <elementGuidId>ad7cfed3-2ec9-4eaf-891f-500fbbb9d8f0</elementGuidId>
    <selectorCollection>

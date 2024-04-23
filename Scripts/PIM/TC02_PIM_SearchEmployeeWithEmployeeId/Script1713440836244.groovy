@@ -17,29 +17,21 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+'Open the browser.'
+WebUI.openBrowser('')
+
+'Maximize the window.'
+WebUI.maximizeWindow()
+
+'Navigate to URL.'
+WebUI.navigateToUrl(GlobalVariable.URL)
+
 'Login to the given user.'
-WebUI.callTestCase(findTestCase('CustomFunctions/Login'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('CustomFunctions/login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-'Click on the \'PIM\' tab.'
-WebUI.click(findTestObject('Object Repository/pimPage/tab_PIM'))
-
-'Verify the \'PIM\' page is displayed.'
-WebUI.verifyElementText(findTestObject('Object Repository/pimPage/ele_PIM'), 'PIM')
-
-'Click on the \'Add\' button.'
-WebUI.click(findTestObject('Object Repository/pimPage/button_Add'))
-
-'Enter the \'First name\' of the employee.'
-WebUI.setText(findTestObject('Object Repository/pimPage/input_Employee Full Name_firstName'), employeeFirstName)
-
-'Enter the \'Middle name\' of the employee.'
-WebUI.setText(findTestObject('Object Repository/pimPage/input_Employee Full Name_middleName'), employeeMiddleName)
-
-'Enter the \'Last name\' of the employee.'
-WebUI.setText(findTestObject('Object Repository/pimPage/input_Employee Full Name_lastName'), employeeLastName)
-
-'Click on the \'Save\' button.'
-WebUI.click(findTestObject('Object Repository/pimPage/button_Save'))
+'Create an employee.'
+WebUI.callTestCase(findTestCase('CustomFunctions/createEmployee'), [('employeeFirstName') : employeeFirstName, ('employeeMiddleName') : employeeMiddleName
+        , ('employeeLastName') : employeeLastName], FailureHandling.STOP_ON_FAILURE)
 
 'Click on the \'PIM\' tab.'
 WebUI.click(findTestObject('pimPage/tab_PIM'))
@@ -75,8 +67,11 @@ WebUI.verifyElementText(findTestObject('Object Repository/pimPage/ele_employeeLa
 'Click on the \'Delete\' icon.'
 WebUI.click(findTestObject('pimPage/icon_delete'))
 
+'Click on the \'Yes,Delete\' button on delete popup.'
+WebUI.click(findTestObject('pimPage/button_Yes, Delete'))
+
 'Logout from the user.'
-WebUI.callTestCase(findTestCase('CustomFunctions/Logout'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('CustomFunctions/logout'), [:], FailureHandling.STOP_ON_FAILURE)
 
 'Close the browser.'
 WebUI.closeBrowser()
